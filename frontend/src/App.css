@@ -1,0 +1,42 @@
+.app {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.grid {
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cell.wall {
+  background: black;
+}
+
+.cell.start {
+  background: green;
+}
+
+.cell.goal {
+  background: red;
+}
+
+.cell.path {
+  background: skyblue;
+}
+
+.buttons {
+  margin-top: 20px;
+}

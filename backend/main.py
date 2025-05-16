@@ -5,6 +5,10 @@ from typing import List, Tuple
 
 app = FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"message": "FastAPI A* Maze Solver is running!"}
+
 # Allow React frontend
 app.add_middleware(
     CORSMiddleware,
