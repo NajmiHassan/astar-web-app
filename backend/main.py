@@ -13,6 +13,7 @@ def read_root():
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Replace * with frontend domain for production
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
